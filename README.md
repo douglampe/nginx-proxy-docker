@@ -1,4 +1,5 @@
 A fork of [jwilder/nginx-proxy](https://github.com/jwilder/nginx-proxy) to enable the new docker networking interface.
+
 Used bits from [schmunk's](https://github.com/schmunk42) comment [here](https://github.com/jwilder/nginx-proxy/issues/304#issuecomment-161437752).
 
 ### Usage
