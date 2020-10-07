@@ -418,6 +418,11 @@ Then build the Alpine variant of the image:
 
 and call the [test/pytest.sh](test/pytest.sh) script again.
 
+Then build the Arm variant of the image:
+
+    docker build -f Dockerfile.arm -t jwilder/nginx-proxy:test .  # build the Arm variant image
+
+and call the [test/pytest.sh](test/pytest.sh) script again.
 
 Then start any containers you want proxied with an env var `VIRTUAL_HOST=subdomain.youdomain.com` and `VIRTUAL_NETWORK=true`
 

@@ -13,4 +13,8 @@ test-alpine: update-dependencies
 	docker build -f Dockerfile.alpine -t jwilder/nginx-proxy:test .
 	test/pytest.sh
 
+test-arm: update-dependencies
+    docker build -f Dockerfile.arm -t jwilder/nginx-proxy:arm .
+	test/pytest.sh
+
 test: test-debian test-alpine

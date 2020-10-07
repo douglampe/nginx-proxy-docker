@@ -21,6 +21,10 @@ or if you want to test the alpine flavor:
 
     docker build -t jwilder/nginx-proxy:test -f Dockerfile.alpine ..
 
+or if you want to test the arm flavor:
+
+    docker build -t jwilder/nginx-proxy:test -f Dockerfile.arm ..
+
 make sure to tag that test image exactly `jwilder/nginx-proxy:test` or the test suite won't work.
 
 
